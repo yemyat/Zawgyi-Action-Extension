@@ -12,7 +12,7 @@ Action.prototype = {
     
     run: function(arguments) {
         var doc = document.createElement('link');
-        doc.href = "http://mmwebfonts.comquas.com/fonts/?font=zawgyi"
+        doc.href = "http://mmwebfonts.comquas.com/fonts/?font=zawgyi";
         doc.rel = "stylesheet";
         document.head.appendChild(doc);
         document.getElementsByTagName("body")[0].style.fontFamily = "zawgyi-one";
