@@ -12,6 +12,9 @@
 		CCF4121E1947383000C5428B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF4121C1947383000C5428B /* Main.storyboard */; };
 		CCF412201947383000C5428B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF4121F1947383000C5428B /* Images.xcassets */; };
 		CCF4122C1947383000C5428B /* ZawgyiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF4122B1947383000C5428B /* ZawgyiTests.swift */; };
+		CCF4123F1947383B00C5428B /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4123E1947383B00C5428B /* ActionRequestHandler.m */; };
+		CCF412411947383B00C5428B /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = CCF412401947383B00C5428B /* Action.js */; };
+		CCF412441947383B00C5428B /* com.nex.Zawgyi.Converter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CCF412391947383B00C5428B /* com.nex.Zawgyi.Converter.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +25,35 @@
 			remoteGlobalIDString = CCF412121947383000C5428B;
 			remoteInfo = Zawgyi;
 		};
+		CCF412421947383B00C5428B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF4120B1947382F00C5428B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF412381947383B00C5428B;
+			remoteInfo = Converter;
+		};
+		CCF412451947383B00C5428B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF4120B1947382F00C5428B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF412381947383B00C5428B;
+			remoteInfo = Converter;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCF4124A1947383B00C5428B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCF412441947383B00C5428B /* com.nex.Zawgyi.Converter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CCF412131947383000C5428B /* Zawgyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zawgyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +65,11 @@
 		CCF412251947383000C5428B /* ZawgyiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZawgyiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF4122A1947383000C5428B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF4122B1947383000C5428B /* ZawgyiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZawgyiTests.swift; sourceTree = "<group>"; };
+		CCF412391947383B00C5428B /* com.nex.Zawgyi.Converter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.nex.Zawgyi.Converter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF4123C1947383B00C5428B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF4123D1947383B00C5428B /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
+		CCF4123E1947383B00C5428B /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
+		CCF412401947383B00C5428B /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCF412361947383B00C5428B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +102,7 @@
 			children = (
 				CCF412151947383000C5428B /* Zawgyi */,
 				CCF412281947383000C5428B /* ZawgyiTests */,
+				CCF4123A1947383B00C5428B /* Converter */,
 				CCF412141947383000C5428B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +112,7 @@
 			children = (
 				CCF412131947383000C5428B /* Zawgyi.app */,
 				CCF412251947383000C5428B /* ZawgyiTests.xctest */,
+				CCF412391947383B00C5428B /* com.nex.Zawgyi.Converter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +154,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CCF4123A1947383B00C5428B /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				CCF4123D1947383B00C5428B /* ActionRequestHandler.h */,
+				CCF4123E1947383B00C5428B /* ActionRequestHandler.m */,
+				CCF412401947383B00C5428B /* Action.js */,
+				CCF4123B1947383B00C5428B /* Supporting Files */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		CCF4123B1947383B00C5428B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCF4123C1947383B00C5428B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +183,13 @@
 				CCF4120F1947383000C5428B /* Sources */,
 				CCF412101947383000C5428B /* Frameworks */,
 				CCF412111947383000C5428B /* Resources */,
+				CCF4124A1947383B00C5428B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCF412431947383B00C5428B /* PBXTargetDependency */,
+				CCF412461947383B00C5428B /* PBXTargetDependency */,
 			);
 			name = Zawgyi;
 			productName = Zawgyi;
@@ -147,6 +214,23 @@
 			productReference = CCF412251947383000C5428B /* ZawgyiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CCF412381947383B00C5428B /* Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF412471947383B00C5428B /* Build configuration list for PBXNativeTarget "Converter" */;
+			buildPhases = (
+				CCF412351947383B00C5428B /* Sources */,
+				CCF412361947383B00C5428B /* Frameworks */,
+				CCF412371947383B00C5428B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Converter;
+			productName = Converter;
+			productReference = CCF412391947383B00C5428B /* com.nex.Zawgyi.Converter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +246,9 @@
 					CCF412241947383000C5428B = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = CCF412121947383000C5428B;
+					};
+					CCF412381947383B00C5428B = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -180,6 +267,7 @@
 			targets = (
 				CCF412121947383000C5428B /* Zawgyi */,
 				CCF412241947383000C5428B /* ZawgyiTests */,
+				CCF412381947383B00C5428B /* Converter */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +286,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF412371947383B00C5428B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF412411947383B00C5428B /* Action.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +317,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCF412351947383B00C5428B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF4123F1947383B00C5428B /* ActionRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +332,16 @@
 			isa = PBXTargetDependency;
 			target = CCF412121947383000C5428B /* Zawgyi */;
 			targetProxy = CCF412261947383000C5428B /* PBXContainerItemProxy */;
+		};
+		CCF412431947383B00C5428B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF412381947383B00C5428B /* Converter */;
+			targetProxy = CCF412421947383B00C5428B /* PBXContainerItemProxy */;
+		};
+		CCF412461947383B00C5428B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF412381947383B00C5428B /* Converter */;
+			targetProxy = CCF412451947383B00C5428B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +494,34 @@
 			};
 			name = Release;
 		};
+		CCF412481947383B00C5428B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Converter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.nex.Zawgyi.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CCF412491947383B00C5428B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Converter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.nex.Zawgyi.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +541,7 @@
 				CCF412311947383000C5428B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCF412321947383000C5428B /* Build configuration list for PBXNativeTarget "ZawgyiTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +550,16 @@
 				CCF412341947383000C5428B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF412471947383B00C5428B /* Build configuration list for PBXNativeTarget "Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF412481947383B00C5428B /* Debug */,
+				CCF412491947383B00C5428B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
